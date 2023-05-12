@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="hu">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="asdfasdfasfdds.css" />
+    <script src="asjkfldhafahsfasdfa.js"></script>
+    <title>asdfasdfas</title>
+  </head>
+  <body onload="init()">
+    <form>
+      <fieldset id="signUp">
+        <h1 id="signUpH1">Regisztráció</h1>
+        <p>
+          <label>Teljes név:</label>
+          <input type="text" name="name" placeholder="Teszt Jancsi" onblur="nevEllenorzes(this)" id="nev"/>
+          <br/>
+          <span class="error" id="nameError"></span>
+        </p>
+  
+        <p>
+          <label>E-mail cím:</label>
+          <input type="email" name="email" placeholder="neved@valami.com" onblur="emailEllenorzes(this)"/>
+          <br/>
+          <span class="error" id="emailError"></span>
+        </p>
+  
+        <p>
+          <label>Születési dátum:</label>
+          <input type="text" name="birthdate" onblur="szulidoEllenorzes(this)" placeholder="1992.03.27"/>
+          <br/>
+          <span class="error" id="birthError"></span>
+        </p>
+  
+        <p>
+          <label>Jelszó:</label>
+          <input type="password" name="password" placeholder="Jelszó" onblur="jelszoEllenorzes(this)"/>
+          <br/>
+          <span class="error" id="passError"></span>
+        </p>
+
+        <div>
+          <button id="btn" type="button" onclick="regEllenorzes()">Kérdések</button>
+          <br>
+          <br>
+          <span class="error" id="regError"></span>
+        </div>
+
+
+
+      </fieldset>
+      <fieldset id="qQuestions">
+
+        <h1 id="questH1">Kérdések</h1>  
+
+        <p>1.feladat Mikor csatlakozott Magyarország az EU-hoz?</p>
+        <div>
+          <input type="radio" name="join" value="200211" class="Join" onclick="feladat1()">
+          <label for="200211">2020.02.11</label>
+        </div>
+        <div>
+          <input type="radio" name="join" value="040501" class="Join" onclick="feladat1()">
+          <label for="040501">2004.05.01</label>
+        </div>
+        <div>
+          <input type="radio" name="join" value="000926" class="Join" onclick="feladat1()">
+          <label for="000926">2000.09.26</label>
+        </div>
+        <div>
+          <input type="radio" name="join" value="100102" class="Join" onclick="feladat1()">
+          <label for="100102">1910.01.02</label>
+        </div>
+        
+
+
+
+
+
+
+
+        <br>
+        <p>2.feladat Az alábbi lehetőségek közül melyik gyümölcs?</p>
+        <div>
+          <input type="checkbox" onclick="Fruits()" name="fruits" value="a" class="Fruits">
+          <label for="a">Alma</label>
+        </div>
+        <div>
+          <input type="checkbox" onclick="Fruits()" name="fruits" value="u" class="Fruits" >
+          <label for="u">Uborka</label>
+        </div>
+        <div>
+          <input type="checkbox" onclick="Fruits()" name="fruits" value="e" class="Fruits" >
+          <label for="e">Eper</label>
+        </div>
+        <div>
+          <input type="checkbox" onclick="Fruits()" name="fruits" value="b" class="Fruits" >
+          <label for="b">Banán</label>
+        </div>
+        <div>
+          <input type="checkbox" onclick="Fruits()" name="fruits" value="h" class="Fruits">
+          <label for="h">Hagyma</label>
+        </div>
+          
+
+
+
+
+
+
+        <br>
+        <p for="question">3.feladat Az alábbi szavak közül melyik a helyes?</p>
+        <p for="question">juk</p>
+        <p for="question">tolvaly</p>
+        <p for="question">bólya</p>
+        <p for="question">pocsoja</p>
+        <div>
+          <input type="text" name="text" id="bolya" onblur="feladat3()">         
+        </div>
+
+
+
+
+
+
+
+
+        <br>
+        <p>4.feladat Kérem mondja meg mikor volt a Trianoni békeszerződés és mely országok lettek Magyarország új határai</p>
+        <textarea id="trianonArea" name="trianOn" onblur="trianonBeke()"></textarea>
+      
+
+
+
+
+
+
+
+        <br>
+
+        <p>5.feladat Kérem egészítse ki a Himnusz 1. versszakát</p>
+        <br>
+            <p id="pickHimnusz">Isten, áldd meg a 
+                <select name="answer1" id="ansWer1" onclick="himnusz1()">
+                <option value="-1" >Válasszon</option>
+               
+                </select> <br>Jó kedvvel, bőséggel,<br>
+                Nyújts feléje védő kart,<br>
+                Ha küzd ellenséggel;<br>
+                Bal sors akit régen tép,<br>
+                Hozz rá víg esztendőt,<br>
+                <select name="answer2" id="ansWer2" onclick="himnusz2()">
+                <option value="-1">Válasszon</option>
+                </select> már e nép<br>
+                A multat s jövendőt!
+            </p>
+                
+
+        <div id="btnDiv">
+          <button id="ellBtnn" type="button" onclick="qEllenorBtn()">Ellenőrzés</button>
+          <br>
+          <br>
+          <span class="error" id="qError"></span>
+        </div>
+
+      </fieldset>
+    </form>
+    <div id="scoreDiv">
+      <p id="scoreTitle">Eredmény:</p><p id="score"></p>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,107 @@
+label {
+    width: 150px;
+    display: inline-block;
+  }
+  
+  .error {
+    color: red;
+    font-weight: 200;
+    font-size: 1.1em;
+  }
+  
+  #signUp{
+    font-weight: bold;
+    font-size: 20px;
+    margin-left:20%;
+    margin-right: 20%;
+    text-align: center;
+    font-family:Arial, Helvetica, sans-serif;
+    background-color: rgb(127, 207, 127);
+
+  }
+  #signUpH1{
+    font-size: 50px;
+    text-align: center;
+    font-family:Arial, Helvetica, sans-serif;
+    text-decoration: underline;
+    margin-top: 0;
+    padding-bottom: 20px;
+  }
+  #questH1{
+    text-align: center;
+    font-family:Arial, Helvetica, sans-serif;
+    font-size: 50px;
+    margin-top: 0;
+    text-decoration: underline;
+    padding-bottom: 15px;
+  }
+  
+  fieldset{
+    margin-top: 2vw;
+    background-color: rgb(255, 255, 255);
+    border: 5px solid rgb(3, 139, 3);
+    border-radius: 15px;
+  }
+  
+  #qQuestions{
+    font-size: 20px;
+    margin-left:20%;
+    margin-right: 20%;
+    padding: 2vw;
+    background-color: rgb(127, 207, 127);
+
+  }
+  #qQuestions p{
+    font-weight: bold;
+    margin-bottom: 2px;
+   
+  }
+  
+  textarea{
+    height: 5em;
+    width: 20em;
+  }
+  
+  #qQuestions #ksz{
+    margin-top: 5px;
+    font-weight: normal;
+    padding-left: 10px;
+    padding-bottom: 20px;
+  }
+  body{
+    background-color: rgb(48, 102, 48);
+    padding-bottom: 8vw;
+  }
+  
+  #btnDiv{
+    text-align: right;
+    padding-top: 1vw;
+    padding-right: 0.5vw;
+  }
+  
+  #scoreDiv{
+    text-align: right;
+    padding-top: 1vw;
+    padding-right: 0.5vw;
+    padding-bottom: 0.5vw;
+    margin-left:45vw;
+    margin-right: 45vw;
+  }
+  
+  #scoreDiv p{
+    color: white;
+  }
+  
+  #scoreDiv #scoreTitle{
+    float: left;
+    padding-right: 5px;
+  }
+  
+  #scoreDiv #score{
+    float: left;
+  }
+  
+  
+  
+  
+  
